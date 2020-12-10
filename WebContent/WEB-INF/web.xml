@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>com.motivity.DoctorRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/reg</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>second</servlet-name>
+   <servlet-class>com.motivity.DoctorLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>second</servlet-name>
+   <url-pattern>/doctor_login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>patient</servlet-name>
+   <servlet-class>com.motivity.PatientRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>patient</servlet-name>
+   <url-pattern>/patient_register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>patientL</servlet-name>
+   <servlet-class>com.motivity.PatientLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>patientL</servlet-name>
+   <url-pattern>/patient_login</url-pattern>
+</servlet-mapping>
+</web-app>
